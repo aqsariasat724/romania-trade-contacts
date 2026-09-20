@@ -424,10 +424,10 @@
   <header>
     <p class="eyebrow">Sample deliverable &middot; Romania</p>
     <h1>Romania Trade Contacts</h1>
-    <p class="lede">A 20-row sample from an automated collection run covering five trades across Romania. Every phone is a valid Romanian number and every address was read from the company&rsquo;s own website, so any row here can be checked independently.</p>
+    <p class="lede">A 24-row sample from an automated collection run covering five trades across Romania. Every phone is a valid Romanian number and every address was read from the company&rsquo;s own website, so any row here can be checked independently.</p>
     <div class="facts">
       <span>5 sectors</span>
-      <span>20 sample rows</span>
+      <span>24 sample rows</span>
       <span>3-column CSV / XLSX</span>
       <span>0 duplicates</span>
       <span>Collected 20 Sep 2026</span>
@@ -438,39 +438,39 @@
   <section>
     <div class="sec-head">
       <h2>Field coverage, measured</h2>
-      <p>Across the full 54-record trial run &mdash; not the filtered sample below</p>
+      <p>Across the full 96-record trial run &mdash; not the filtered sample below</p>
     </div>
     <div class="sec-body">
       <div class="cov">
         <div>
           <div class="metric-top">
             <span class="metric-name">Phone populated</span>
-            <span class="metric-pct" style="color:var(--ok)">74%</span>
+            <span class="metric-pct" style="color:var(--ok)">76%</span>
           </div>
-          <div class="bar"><i style="width:74%;background:var(--ok)"></i></div>
-          <p class="metric-sub">40 of 54 records</p>
+          <div class="bar"><i style="width:76%;background:var(--ok)"></i></div>
+          <p class="metric-sub">73 of 96 records</p>
         </div>
         <div>
           <div class="metric-top">
             <span class="metric-name">Email populated</span>
-            <span class="metric-pct" style="color:var(--warn)">56%</span>
+            <span class="metric-pct" style="color:var(--warn)">53%</span>
           </div>
-          <div class="bar"><i style="width:56%;background:var(--warn)"></i></div>
-          <p class="metric-sub">30 of 54 &middot; 10 listed, 20 recovered from sites</p>
+          <div class="bar"><i style="width:53%;background:var(--warn)"></i></div>
+          <p class="metric-sub">51 of 96 &middot; 16 listed, 35 recovered from sites</p>
         </div>
         <div>
           <div class="metric-top">
             <span class="metric-name">Both fields present</span>
-            <span class="metric-pct" style="color:var(--accent)">37%</span>
+            <span class="metric-pct" style="color:var(--accent)">41%</span>
           </div>
-          <div class="bar"><i style="width:37%;background:var(--accent)"></i></div>
-          <p class="metric-sub">20 of 54 records</p>
+          <div class="bar"><i style="width:41%;background:var(--accent)"></i></div>
+          <p class="metric-sub">39 of 96 records</p>
         </div>
       </div>
 
       <div class="callout">
-        <h3>Why the sample reads 100% and the run reads 37%</h3>
-        <p>The 20 rows below were filtered to complete records so the formatting and data quality are easy to judge. They are not representative of yield. Most Romanian trade businesses publish a phone but no email, so crawling company websites roughly doubles email coverage &mdash; from 19% to 56% here &mdash; but a 90% threshold is not reachable from public sources at this budget.</p>
+        <h3>Why the sample reads 100% and the run reads 41%</h3>
+        <p>The 24 rows below were filtered to complete records so the formatting and data quality are easy to judge. They are not representative of yield. Most Romanian trade businesses publish a phone but no email, so crawling company websites roughly triples email coverage &mdash; from 17% to 53% here &mdash; but a 90% threshold is not reachable from public sources at this budget.</p>
       </div>
     </div>
   </section>
@@ -548,31 +548,64 @@ Electro Light,+40265208400,comenzi@electrolight.ro</pre>
     </div>
   </section>
 
-  <footer>UTF-8 CSV with BOM &mdash; Romanian diacritics render correctly in Excel. XLSX available on request.</footer>
+  <section>
+    <div class="sec-head">
+      <h2>Source and licence</h2>
+      <p>Worth reading before the file is used commercially</p>
+    </div>
+    <div class="sec-body">
+      <ol class="method">
+        <li>
+          <div>
+            <b>Base records &mdash; OpenStreetMap</b>
+            <p>Company names, phone numbers and website addresses are derived from OpenStreetMap: &copy; OpenStreetMap contributors, available under the <a href="https://opendatacommons.org/licenses/odbl/" target="_blank" rel="noopener">Open Database Licence (ODbL) 1.0</a>. A database derived from ODbL data carries attribution and share-alike obligations, so this notice needs to travel with the file.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Email addresses &mdash; each company&rsquo;s own site</b>
+            <p>Emails do not come from the base records. Each one was read from the company&rsquo;s own public website or contact page, so they sit outside the obligation above.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Personal data removed</b>
+            <p>Addresses belonging to a named individual are stripped and, where the company publishes one, replaced with its role address. Only role and company addresses ship, which keeps the file clear of GDPR personal data. Marketing contact still needs a lawful basis under Romanian Law 506/2004 &mdash; that sits with whoever sends the mail.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <footer>UTF-8 CSV with BOM &mdash; Romanian diacritics render correctly in Excel. XLSX available on request.<br>Base data &copy; OpenStreetMap contributors, ODbL.</footer>
 </div>
 
 <script>
   const DATA = [
-    ["Napa Impex","+40265315268","office@napa.ro","Design & Architecture"],
-    ["7sensesdesign","+40721222630","office@7sensesdesign.ro","Design & Architecture"],
-    ["Vasim Topo","+40744695616","vasim.topo@yahoo.com","Design & Architecture"],
-    ["Somaco","+40238718760","office@somaco.ro","Design & Architecture"],
-    ["Catalonia Inox","+40365882240","office@cataloniainox.ro","Locksmith & Metalwork"],
-    ["Trutzi","+40752111845","contact@trutzi.ro","Locksmith & Metalwork"],
-    ["EEE PL Timișoara","+40256218517","magazin@eee.ro","Electrical Installations"],
-    ["Electro Grup SRL","+40260614877","secretariat@electrogrup-sedo.ro","Electrical Installations"],
-    ["Inel SA","+40238710753","office@inelsa.ro","Electrical Installations"],
-    ["Electro Light","+40265208400","comenzi@electrolight.ro","Electrical Installations"],
-    ["Comtec","+40213233467","sales@comtec-int.ro","Electrical Installations"],
-    ["HomeVast","+40722306338","office@homevast.ro","Electrical Installations"],
-    ["Electric Casa","+40720100035","clienti@electriccasa.ro","Electrical Installations"],
-    ["Dominant Electric","+40265206370","karoly.simon@dominantelectric.ro","Electrical Installations"],
-    ["Weldmaster","+40744387111","weldmastersrl@gmail.com","Electrical Installations"],
-    ["Valoris","+40785240320","vanzari@valoriselectric.ro","Electrical Installations"],
-    ["Sc Macimo Srl","+40744131077","macimo@macimo.ro","Stonemasonry"],
-    ["Piatra.com","+40722241319","sales@piatra.com","Stonemasonry"],
-    ["Prolecons","+40744556236","office@proelcons.ro","Carpentry"],
-    ["Fk Lemn","+40748566574","office@lemn-panouri.ro","Carpentry"]
+    ["Napa Impex", "+40265315268", "office@napa.ro", "Design & Architecture"],
+    ["Catalonia Inox", "+40365882240", "office@cataloniainox.ro", "Locksmith & Metalwork"],
+    ["EEE PL Timișoara", "+40256218517", "magazin@eee.ro", "Electrical Installations"],
+    ["Sc Macimo Srl", "+40744131077", "macimo@macimo.ro", "Stonemasonry"],
+    ["Prolecons", "+40744556236", "office@proelcons.ro", "Carpentry"],
+    ["7sensesdesign", "+40721222630", "office@7sensesdesign.ro", "Design & Architecture"],
+    ["Trutzi", "+40752111845", "contact@trutzi.ro", "Locksmith & Metalwork"],
+    ["Electro Grup SRL", "+40260614877", "secretariat@electrogrup-sedo.ro", "Electrical Installations"],
+    ["Piatra.com", "+40722241319", "sales@piatra.com", "Stonemasonry"],
+    ["Fk Lemn", "+40748566574", "office@lemn-panouri.ro", "Carpentry"],
+    ["Somaco", "+40238718760", "office@somaco.ro", "Design & Architecture"],
+    ["Inel SA", "+40238710753", "office@inelsa.ro", "Electrical Installations"],
+    ["Barrier", "+40756198353", "cabris@barrier.ro", "Carpentry"],
+    ["Electro Light", "+40265208400", "office@electrolight.ro", "Electrical Installations"],
+    ["Prestarea", "+40232264422", "office@fabricadeferestre.com", "Carpentry"],
+    ["Comtec", "+40213233467", "sales@comtec-int.ro", "Electrical Installations"],
+    ["Qfort", "+40720700607", "office@qfort.ro", "Carpentry"],
+    ["HomeVast", "+40722306338", "office@homevast.ro", "Electrical Installations"],
+    ["Mirastar srl - Ferestre Lemn Stratificat", "+40723561861", "office@mirastar.ro", "Carpentry"],
+    ["Electric Casa", "+40720100035", "clienti@electriccasa.ro", "Electrical Installations"],
+    ["Visuall Glass", "+40752995566", "office@visuallglass.ro", "Carpentry"],
+    ["Dominant Electric", "+40265206370", "webshop@dominantelectric.ro", "Electrical Installations"],
+    ["Termopane Service Cold", "+40248511540", "service_cold@yahoo.com", "Carpentry"],
+    ["Weldmaster", "+40744387111", "weldmastersrl@gmail.com", "Electrical Installations"]
   ];
 
   const SECTORS = ["Design & Architecture","Locksmith & Metalwork","Electrical Installations","Stonemasonry","Carpentry"];
